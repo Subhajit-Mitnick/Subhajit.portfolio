@@ -1,0 +1,121 @@
+.contact-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px 40px 20px;
+}
+
+.contact-container {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.456);
+    width: 100%;
+    max-width: 600px;
+    opacity: 0.9;
+}
+.dark-theme .contact-container{
+    opacity: 0.8;
+    background-color: #151B23;
+    border: 1px solid #38485e;
+}
+.contact-container h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.dark-theme .contact-container h1{
+    color: whitesmoke;
+}
+.contact-form {
+    width: 90%;
+}
+
+.contact-form label {
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 8px;
+}
+.dark-theme .contact-form label{
+    color: whitesmoke;
+}
+.contact-form input,
+.contact-form textarea {
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: #333;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.dark-theme .contact-form input,
+.dark-theme .contact-form textarea {
+    background-color: #232d39;
+    border: 1px solid #38485e;
+    color: whitesmoke;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact-form button {
+    width: 100%;
+    background-color: #002aff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.dark-theme .contact-form button{
+    background-color: #0468e1;
+    color: whitesmoke;
+}
+.contact-form button:hover {
+    background-color: #023879;
+    transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+    .contact-container h1 {
+        font-size: 26px;
+    }
+
+    .contact-form label {
+        font-size: 18px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 16px;
+    }
+
+    .contact-form button {
+        font-size: 16px;
+    }
+}

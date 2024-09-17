@@ -1,0 +1,162 @@
+.header {
+    position: fixed;
+    top: 0;
+    display: flex; 
+    width: 100vw;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 254, 254);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    opacity: 0.85;
+}
+.dark-theme .header {
+    background-color: #010409;
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+}
+.navbar {
+    display: flex; 
+    max-width: 1200px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-left {
+    display: flex; 
+    align-items: center;
+}
+
+.logo a {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+.dark-theme .logo a{
+    color: whitesmoke;
+}
+.nav-right {
+    display: flex; 
+    align-items: center;
+}
+
+.menu-list {
+    display: flex; 
+    align-items: center;
+    list-style: none;
+}
+
+.menu-list li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 0px 20px;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+.dark-theme .menu-list li a{
+    color: whitesmoke;
+}
+
+.menu-list li a:hover {
+    color: #002aff;
+}
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle img {
+    width: 24px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.toggle:hover img {
+    transform: scale(1.4);
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu.active {
+    display: flex;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .theme-toggle {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .nav-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-toggle .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #343333;
+        margin: 5px 0;
+    }
+    .dark-theme .nav-toggle .bar {
+        background-color: whitesmoke;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        padding: 10px 0px 10px 10px;
+        background-color: rgb(255, 254, 254);
+        width: 40%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        border-radius: 0px 0px 10px 10px;
+        align-items: baseline;
+        flex-direction: column;
+    }
+    .dark-theme .nav-menu{
+        opacity: 8;
+        background-color: #151B23;
+        border: 1px solid #38485e;
+    }
+    .menu-list {
+        flex-direction: column;
+    }
+
+    .menu-list li {
+        width: 100%;
+    }
+
+    .menu-list li a {
+        display: block;
+        padding: 10px;
+    }
+    .toggle:hover img {
+        transform: none;
+    }
+
+}

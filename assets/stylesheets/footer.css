@@ -1,0 +1,119 @@
+.footer {
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-contact .footer-phone,
+.footer-contact .footer-email {
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+}
+
+.footer-contact .footer-phone a,
+.footer-contact .footer-email a {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 18px;
+    color: #07103e;
+    text-decoration: none;
+    transition: text-decoration 0.9s ease, color 0.3s ease;
+}
+.dark-theme .footer-phone a,
+ .dark-theme .footer-email a {
+    color: whitesmoke;
+}
+.footer-contact .footer-phone a:hover,
+.footer-contact .footer-email a:hover {
+    text-decoration: underline;
+    color: #002aff;
+}
+
+.footer-contact .footer-phone .fa-phone,
+.footer-contact .footer-email .fa-envelope {
+    font-size: 20px;
+    color: #025071;
+}
+.dark-theme .footer-phone .fa-phone,
+.dark-theme .footer-email .fa-envelope{
+    color: blanchedalmond;
+}
+.footer-social {
+    display: flex;
+    padding: 20px 0;
+    gap: 60px;
+}
+
+.footer-social .fa-linkedin-in,
+.footer-social .fa-x-twitter,
+.footer-social .fa-facebook,
+.footer-social .fa-instagram {
+    margin: 0;
+    font-size: 28px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-social .fa-linkedin-in {
+    color: #0A66C2;
+}
+.dark-theme .footer-social .fa-linkedin-in{
+    color: #0080ff;
+}
+.footer-social .fa-x-twitter {
+    color: black;
+}
+.dark-theme .footer-social .fa-x-twitter{
+    color: whitesmoke;
+}
+.footer-social .fa-facebook {
+    color: #129FF6;
+}
+
+.dark-theme .footer-social .fa-facebook{
+    color: #0080ff;
+}
+
+.footer-social .fa-instagram {
+    color: #FF016F;
+}
+
+.footer-social .fa-linkedin-in:hover,
+.footer-social .fa-x-twitter:hover,
+.footer-social .fa-facebook:hover,
+.footer-social .fa-instagram:hover {
+    color: wheat;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+
+    .footer-contact .footer-phone a,
+    .footer-contact .footer-email a {
+        font-size: 16px;
+    }
+
+    .footer-contact .footer-phone .fa-phone,
+    .footer-contact .footer-email .fa-envelope {
+        font-size: 18px;
+    }
+
+    .footer-social .fa-linkedin-in,
+    .footer-social .fa-x-twitter,
+    .footer-social .fa-facebook,
+    .footer-social .fa-instagram {
+        font-size: 24px;
+        margin: 0;
+    }
+
+}

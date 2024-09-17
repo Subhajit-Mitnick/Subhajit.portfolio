@@ -1,0 +1,191 @@
+.skills {
+    padding: 60px 20px; 
+    text-align: center; 
+}
+
+.skills h1 {
+    font-size: 48px; 
+    color: #414141;
+    margin-bottom: 30px; 
+    font-family: 'Courier New', Courier, monospace; 
+    font-weight: bold;
+}
+.dark-theme .skills h1 {
+    color: whitesmoke;
+}
+.skill-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    align-items: flex-start; 
+    padding: 10px; 
+    background-color: #ffffff;
+    border-bottom: 4px solid rgb(7, 101, 160);
+    border-radius: 10px 10px 4px 4px; 
+    box-shadow: 0 4px 8px rgba(10, 27, 77, 0.456); 
+    max-width: 900px; 
+    margin: 20px auto; 
+    opacity: 0.9;
+}
+.dark-theme .skill-card {
+    opacity: 0.8;
+    background-color: #151B23;
+    border-top: 1px solid #38485e;
+    border-left: 1px solid #38485e;
+    border-right: 1px solid #38485e;
+    border-bottom: 4px solid #38485e;
+}
+.skill-domain {
+    flex: 1 1 100%; 
+    text-align: center; 
+}
+
+.skill-domain h2 {
+    padding: 5px 0;
+    font-size: 24px;
+    color: rgb(19, 51, 102); 
+    font-family: 'Courier New', Courier, monospace; 
+    font-weight: bold; 
+}
+.dark-theme .skill-domain h2{
+    color: whitesmoke;
+}
+.skill-content {
+    flex: 1 1 100%; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: flex-start; 
+}
+
+.skill-content ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+.skill-content img{
+    max-width: 24px;
+    width: 100%;
+}
+.skill-content p{
+    padding: 0 5px;
+}
+.skill-content ul li{
+    display: flex;
+    align-items: center;
+    margin: 5px 10px; 
+    padding: 5px 5px; 
+    border-radius: 30px; 
+    box-shadow: 0 2px 4px rgba(19, 51, 102, 0.350); 
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 16px;
+    font-weight: bold; 
+    transition: transform 0.2s ease; 
+}
+.dark-theme .skill-content ul li{
+    box-shadow: 0 2px 4px rgba(25, 78, 163, 0.35); 
+}
+.skill-content ul .skill-react{
+    background: linear-gradient(90deg, #1dbed0, #be0741);
+    color: whitesmoke;
+}
+.skill-content ul .skill-nextJs{
+    background: linear-gradient(90deg, rgb(181, 178, 178), #ffffff);
+    color: #1b1b1b;
+}
+.skill-content ul .skill-css{
+    background: linear-gradient(90deg,#0B1120, #0c4982);
+    color: whitesmoke;
+}
+.skill-content ul .skill-typeScript{
+    background: linear-gradient(90deg, #1a416e,#3178C6);
+    color: whitesmoke;
+}
+.skill-content ul .skill-node{
+    background: linear-gradient(90deg, #0D121C,#2b563b);
+    color: whitesmoke;
+}
+.skill-content ul .skill-express{
+    background: linear-gradient(90deg, rgb(181, 178, 178), #ffffff);
+    color: #1b1b1b;
+}
+.skill-content ul .skill-mongo{
+    background: linear-gradient(90deg, #001E2B, #014E3D);
+    color: whitesmoke;
+}
+.skill-content ul .skill-sql{
+    background: linear-gradient(90deg, #212121, #2863a7);
+    color: whitesmoke;
+}
+.skill-content ul .skill-bash{
+    background: linear-gradient(90deg, #212121, #385042);
+    color: whitesmoke;
+}
+.skill-content ul .skill-git{
+    background: linear-gradient(90deg, rgb(181, 178, 178), #ffffff);
+    color: #1b1b1b;
+}
+.skill-content ul .skill-cd{
+    background: linear-gradient(90deg, #0D1117, #3343be);
+    color: whitesmoke;
+}
+.skill-content ul .skill-docker{
+    background: linear-gradient(90deg, #212121, #2863a7);
+    color: whitesmoke;
+}
+.skill-content ul .skill-kubernetes{
+    background: linear-gradient(90deg,#0c1835, #3c5c7d);
+    color: whitesmoke;
+}
+.skill-content ul .skill-terraform{
+    background: linear-gradient(90deg,#160628, #543379);
+    color: whitesmoke;
+}
+.skill-content ul .skill-helm{
+    background: linear-gradient(90deg, #235793,#5295de);
+    color: white;
+}
+.skill-content ul .skill-solidity{
+    background: linear-gradient(90deg, #225692,#448ddb);
+    color: whitesmoke;
+}
+.skill-content ul .skill-eth{
+    background: linear-gradient(90deg, #474783,#cca1e4);
+    color: whitesmoke;
+}
+.skill-content ul .skill-rust{
+    background: linear-gradient(90deg, #A72145,#c69aa6);
+    color: white;
+}
+.skill-content ul .skill-solana{
+    background: linear-gradient(90deg, #401375,#C262ED);
+    color: white;
+}
+.skill-content ul .skill-figma{
+    background: linear-gradient(90deg, rgb(217, 217, 217), #ffffff);
+    color: #1b1b1b;
+}
+.skill-content ul .skill-xd{
+    background: linear-gradient(90deg, rgb(217, 217, 217), #ffffff);
+    color: #1b1b1b;
+}
+.skill-content ul .skill-gpt{
+    background: linear-gradient(90deg, #1b8661,#2CD59A);
+    color: whitesmoke;
+}
+.skill-content ul .skill-mid{
+    background: linear-gradient(90deg, rgb(217, 217, 217), #ffffff);
+    color: #1b1b1b;
+}
+.skill-content ul li:hover {
+    transform: scale(1.05); 
+}
+
+@media (max-width: 768px) {
+    .skills h1 {
+        font-size: 36px; 
+    }
+}

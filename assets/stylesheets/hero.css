@@ -1,0 +1,316 @@
+
+.hero {
+    display: flex;
+    margin-top: 60px;
+    height: calc(100vh - 60px);
+    align-items: center;
+    justify-content: center;
+    background-image: radial-gradient(rgb(67, 75, 87) 1px, transparent 1px);
+    background-size: 30px 30px;
+    
+}
+.hero-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+
+}
+.hero-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.hero-left-card {
+    padding: 30px 20px; 
+    text-align: left;
+    width: 100%; 
+    margin-left: 0; 
+}
+
+.hero-left h1 {
+    font-size: 48px; 
+    color: #1b1b1b; 
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold; 
+    padding: 10px 0; 
+    white-space: nowrap;
+}
+.dark-theme .hero-left h1{
+    color: #DDE6ED;
+}
+
+#hero-name{
+    color: #002aff;
+}
+.dark-theme #hero-name{
+    color: #30619F;
+}
+.hero-left p {
+    font-size: 36px; 
+    color: #464444; 
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold; 
+    padding: 10px 0; 
+    white-space: nowrap;
+}
+.dark-theme .hero-left p{
+    color: whitesmoke;
+}
+
+.typing {
+    animation: typing 2s steps(10, end), blink .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
+
+.hero-button {
+    padding-left: 20px;
+    margin-left: 0;
+}
+
+.cta-button {
+    background-color: #002aff; 
+    color: #ffffff;
+    border: none; 
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 18px; 
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.dark-theme .cta-button{
+    background-color: #0468e1;
+    color: whitesmoke;
+}
+.cta-button:hover {
+    background-color: #023879; 
+    transform: scale(1.02);
+}
+
+.hero-social {
+    padding: 20px 0 0 20px;
+    margin-left: 0;
+    display: flex;
+}
+.hero-social .fa-github{
+    font-size: 28px;
+    color: #666666;
+    margin-right: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.dark-theme .hero-social .fa-github{
+    color: #a6a6a6;
+}
+.hero-social .fa-linkedin-in{
+    font-size: 28px;
+    color: #0A66C2;
+    margin-right: 20px; 
+    transition: color 0.3s ease, 0.3s ease;
+}
+.dark-theme .hero-social .fa-linkedin-in{
+    color: #0080ff;
+}
+.hero-social .fa-github:hover, .hero-social .fa-linkedin-in:hover{
+    color: #0c1835;
+    transform: scale(1.1);
+}
+.dark-theme .hero-social .fa-github:hover, .hero-social .fa-linkedin-in:hover{
+    color: #023879;
+}
+.hero-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-animation {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.internet-globe {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    box-shadow: 0 0 48px rgb(86, 130, 163);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: orbit 50s linear infinite;
+}
+.internet-globe img {
+    width: 50px;
+    aspect-ratio: 1/1;
+}
+
+.github,
+.figma,
+.react,
+.web3-globe {
+    position: absolute;
+    border-style: solid;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+}
+
+.github {
+    width: 10%;
+    aspect-ratio: 1/1;
+    border-color: rgb(234, 101, 25) transparent transparent transparent;
+    animation: orbit 5s linear infinite;
+}
+.dark-theme .github {
+    border-color: rgb(143, 171, 191) transparent transparent transparent;
+}
+
+.figma {
+    width: 18%;
+    aspect-ratio: 1/1;
+    border-color: rgb(92, 21, 21) transparent transparent transparent;
+    animation: orbit 3.2s linear infinite;
+}
+.dark-theme .figma {
+    border-color: rgb(152, 172, 188) transparent transparent transparent;
+}
+.react {
+    width: 26%;
+    aspect-ratio: 1/1;
+    border-color: rgba(190, 30, 19, 0.866) transparent transparent transparent;
+    animation: orbit 8s linear infinite;
+}
+.dark-theme .react {
+    border-color: rgb(118, 161, 198) transparent transparent transparent;
+}
+.web3-globe {
+    width: 34%;
+    aspect-ratio: 1/1;
+    border-color: rgb(7, 101, 160) transparent transparent transparent;
+    animation: orbit 6s linear infinite;
+}
+.dark-theme .web3-globe{
+    border-color: rgb(134, 159, 189) transparent transparent transparent;
+}
+.github::before,
+.figma::before,
+.react::before,
+.web3-globe::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background-size: cover;
+}
+.github::before {
+    top: 9%; 
+    right: -9%;
+    width: 30%;
+    aspect-ratio: 1/1;
+    background-image: url('../images/swift.png');
+    animation: orbit 4.8s linear infinite;
+
+}
+
+.figma::before {
+    top: 10%; 
+    right: 4%;
+    width: 15%;
+    aspect-ratio: 1/1;
+    background-image: url('../images/figma.png');
+    animation: orbit 30s linear infinite;
+}
+
+.react::before {
+    top: 10%; 
+    right: 7.5%;
+    width: 12.5%;
+    aspect-ratio: 1/1;
+    background-image: url('../images/ios.png');
+    animation: orbit 2s linear infinite;
+}
+
+.web3-globe::before {
+    top: 10%; 
+    right: 10%; 
+    width: 10%;
+    aspect-ratio: 1/1;
+    background-image: url('../images/kotlin.png');
+    animation: orbit 25s linear infinite;
+}
+
+
+@keyframes orbit {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column; /* Stack hero-left and hero-right */
+        align-items: center; /* Center align content */
+    }
+    .hero-left {
+        width: 100%;
+    }
+    .hero-left-card{
+        padding-bottom: 10px;
+    }
+    .hero-left h1 {
+        font-size: 36px; 
+        padding: 5px 0;
+    }
+    
+    .hero-left p {
+        font-size: 24px; 
+        padding: 5px 0;
+    }
+    .cta-button {
+        font-size: 14px; 
+    }
+    .fa-github{
+        font-size: 24px;
+        margin-right: 20px;
+    }
+    .fa-linkedin-in{
+        font-size: 24px;
+        margin-right: 20px;
+    }
+    .hero-right{
+        width: 100%;
+    }
+
+    .github {
+        width: 25%;
+    }
+    
+    .figma {
+        width: 40%;
+    }
+    .react {
+        width: 55%;
+    }
+    .web3-globe {
+        width: 70%;
+    }
+    .cta-button:hover {
+        transform: none;
+    }
+}

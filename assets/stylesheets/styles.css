@@ -1,0 +1,21 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    overflow-x: hidden;
+    /* background-image: radial-gradient(rgb(67, 75, 87) 1px, transparent 1px);
+    background-size: 30px 30px; */
+}
+
+body.dark-theme{
+    background-color: #010409;
+    background-image: radial-gradient(#283035 1px, transparent 1px);
+}
