@@ -1,2 +1,2 @@
-# sampreet.dev
+# subhajit.dev
 personal-portfolio
